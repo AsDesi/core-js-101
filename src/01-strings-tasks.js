@@ -239,7 +239,7 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(/* str */) {
-  throw new Error('Not implemented');
+
 }
 
 /**
@@ -256,7 +256,7 @@ function encodeToRot13(/* str */) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-  return typeof value === 'string';
+  return typeof value === 'string' || value instanceof String;
 }
 
 
